@@ -1,5 +1,6 @@
 package com.activation_cloud.braintrainer;
 
+import android.content.pm.ActivityInfo;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         gobuttom = (Button)findViewById(R.id.gobuttom);
         gobuttom.setOnClickListener(this);
         bm1 = (Button)findViewById(R.id.button1);
